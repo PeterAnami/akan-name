@@ -1,5 +1,5 @@
 body {
-  background-image: url(photo/culture.jpeg);
+  background-image: url(photo/birds.jpg);
   /* background-position: center; */
   background-repeat: no-repeat; 
   background-size: cover; 
@@ -12,13 +12,14 @@ body {
 .holder{
   font-family:;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .head h3 {
   padding: 15px;
   font-weight: 700;
   font-size: xx-large;
+  color: white;
 }
 
 .head img {
@@ -32,6 +33,7 @@ body {
 .description p {
   font-size: larger;
   font-weight: 400;
+  color: white;
 }
 
 .tbl {
@@ -40,8 +42,8 @@ body {
 }
 
 .tbl td {
-  border-color: black;
-  border-style: solid;
+  border-color: white;
+  border-style:2px solid white;
   border-width: 1px;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -51,8 +53,8 @@ body {
 }
 
 .tbl th {
-  border-color: black;
-  border-style: solid;
+  border-color: white;
+  border-style:2px solid white;
   border-width: 1px;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -64,7 +66,8 @@ body {
 
 .tbl .tbl-main {
   text-align: center;
-  vertical-align: top
+  vertical-align: top;
+  color: white;
 }
 
 form {
@@ -104,5 +107,9 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: black;
+  background-color: white;
+}
+legend{
+  color: white;
+  font-size: 25px;
 }
