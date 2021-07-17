@@ -16,8 +16,9 @@ Javascript
 ## Support and contact details
 Instagram Platnumzpeter
 Facebook: platnumzpeter
-Tweeter: platnumzpeter
+Tweeter: @platnumzpeter
 Linkedin: The platnumz
+
 ### License
 Terms and conditions apply
 Copyright (c) 2021 **Peter Anami**
