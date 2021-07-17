@@ -10,7 +10,7 @@ var akan = function(w, x, y, z) {
   }
 }
 
-// User interface (or front-end) logic:
+// front-end:
 $(document).ready(function() {
   $("form#form").submit(function(event) {
       event.preventDefault();
@@ -18,7 +18,7 @@ $(document).ready(function() {
       var x = parseInt($("#month").val());
       var y = parseInt($("#date").val());
       var z = $("input:radio[name=gender]:checked").val();
-      var result = akan(y, m, d, g);
+      var result = akan(w, x, y, z);
       alert("Your akan name is: " + result);
       //refresh page
       document.getElementById("form").reset();
