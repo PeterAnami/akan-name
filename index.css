@@ -1,16 +1,10 @@
 body {
   background-image: url(photo/birds.jpg);
-  /* background-position: center; */
   background-repeat: no-repeat; 
-  background-size: cover; 
-  
-
-  /* width: 100%; */
-  
-
+  background-size: cover;
 }
 .holder{
-  font-family:;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: white;
 }
@@ -20,6 +14,7 @@ body {
   font-weight: 700;
   font-size: xx-large;
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .head img {
@@ -31,14 +26,16 @@ body {
 }
 
 .description p {
-  font-size: larger;
+  font-size: 20px;
   font-weight: 400;
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .tbl {
   border-collapse: collapse;
   border-spacing: 0;
+  border-style:2px solid white;
 }
 
 .tbl td {
@@ -55,8 +52,7 @@ body {
 .tbl th {
   border-color: white;
   border-style:2px solid white;
-  border-width: 1px;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;
   overflow: hidden;
@@ -68,6 +64,8 @@ body {
   text-align: center;
   vertical-align: top;
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  border-style:2px solid white;
 }
 
 form {
@@ -76,14 +74,9 @@ form {
   padding: 20px;
   width: 50%;
   margin-left: 25%;
+  font-family: 'Open Sans', sans-serif;
 
 }
-
-legend {
-  text-align: center;
-  color: lightsalmon;
-}
-
 input[type=number],
 [type="radio"] {
   width: 100%;
@@ -112,4 +105,5 @@ input[type=submit]:hover {
 legend{
   color: white;
   font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
 }
