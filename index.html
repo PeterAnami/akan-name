@@ -20,58 +20,92 @@
               In many parts of Ghana, and elsewhere in West Africa, a person’s 
               name is determined by the day of the week on which she/he was born.
                 <br> Input your year of birth, date, month and gender below. 
-                This will output your name depending on your bithday.
+                This will output your name depending on your birth day.
                 <br> You can also view your name or day of birth from the table on your right. <br>
             </p>
         </div>
     </div>
     <div class="main">
         <div class="row">
-            <div class="col-md-3">
+            <div class="fast-table">
                 <br>
-                <table class="tg">
+                <table class="tbl">
                     <tr>
-                        <th class="tg-baqh">Day of the Week</th>
-                        <th class="tg-0lax">Female Name</th>
-                        <th class="tg-0lax">Male Name</th>
+                        <th class="tbl-main">Week Day</th>
+                        <th class="tbl-A">Female Name</th>
+                        <th class="tbl-A">Male Name</th>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">SUNDAY</td>
-                        <td class="tg-0lax">Akosua</td>
-                        <td class="tg-0lax">Kwasi</td>
+                        <td class="tbl-A">SUNDAY</td>
+                        <td class="tbl-A">Akosua</td>
+                        <td class="tbl-A">Kwasi</td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">MONDAY</td>
-                        <td class="tg-0lax">Adwoa</td>
-                        <td class="tg-0lax">Kudwo</td>
+                        <td class="tbl-A">MONDAY</td>
+                        <td class="tbl-A">Adwoa</td>
+                        <td class="tbl-A">Kudwo</td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">TUESDAY</td>
-                        <td class="tg-0lax">Abenaa</td>
-                        <td class="tg-0lax">Kwabena</td>
+                        <td class="tbl-A">TUESDAY</td>
+                        <td class="tbl-A">Abenaa</td>
+                        <td class="tbl-A">Kwabena</td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">WEDNESDAY</td>
-                        <td class="tg-0lax">Akua</td>
-                        <td class="tg-0lax">Kwaku</td>
+                        <td class="tbl-A">WEDNESDAY</td>
+                        <td class="tbl-A">Akua</td>
+                        <td class="tbl-A">Kwaku</td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">THURSDAY</td>
-                        <td class="tg-0lax">Yaa</td>
-                        <td class="tg-0lax">Yaw</td>
+                        <td class="tbl-A">THURSDAY</td>
+                        <td class="tbl-A">Yaa</td>
+                        <td class="tbl-A">Yaw</td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">FRIDAY</td>
-                        <td class="tg-0lax">Afua</td>
-                        <td class="tg-0lax">Kofi</td>
+                        <td class="tbl-A">FRIDAY</td>
+                        <td class="tbl-A">Afua</td>
+                        <td class="tbl-A">Kofi</td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">SATURDAY</td>
-                        <td class="tg-0lax">Ama</td>
-                        <td class="tg-0lax">Kwame</td>
+                        <td class="tbl-A">SATURDAY</td>
+                        <td class="tbl-A">Ama</td>
+                        <td class="tbl-A">Kwame</td>
                     </tr>
                 </table>
             </div>
+            <div class="column-001">
+              <form id="form" name="form" onsubmit="findDay()">
+                  <legend>Please fill in to see your Name:
+                      <hr>
+                  </legend>
+                  <label for="year ">Birth Year</label>
+                  <input type="number" id="year" name="year" min="1900" max="2021" required placeholder="Example: 1995">
+
+                  <label for="month ">Month</label>
+                  <input type="number" id="month" name="month" min="1" max="12" required placeholder="Example: August 11, Jan 5">
+
+                  <label for="date ">Date</label>
+                  <input type="number" id="date" name="date" min="1" max="31" required placeholder="Example: 21 ">
+
+                  <p>Select gender: <br></p>
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="gender" value="Female" checked>
+                        Female
+                      </label>
+                  </div>
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="gender" value="Male">
+                        Male
+                  </label>
+                  </div>
+
+                  <input type="submit" value="Submit">
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
   
 </body>
 </html>
