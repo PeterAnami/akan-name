@@ -1,24 +1,24 @@
 //back-end
-var akan = function(w, x, y, z) {
+var akan = function(y, m, d, g) {
   var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   var maleNames = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-  var y = new Date(w, --x, y);
-  if (z === "Female") {
-      return y && femaleNames[y.getDay()];
+  var d = new Date(y, --m, d);
+  if (g === "Female") {
+      return d && femaleNames[d.getDay()];
   } else {
-      return y && maleNames[y.getDay()];
+      return d && maleNames[d.getDay()];
   }
 }
 
-// front-end:
+// front-end
 $(document).ready(function() {
   $("form#form").submit(function(event) {
       event.preventDefault();
-      var w = parseInt($("#year").val());
-      var x = parseInt($("#month").val());
-      var y = parseInt($("#date").val());
-      var z = $("input:radio[name=gender]:checked").val();
-      var result = akan(w, x, y, z);
+      var y = parseInt($("#year").val());
+      var m = parseInt($("#month").val());
+      var d = parseInt($("#date").val());
+      var g = $("input:radio[name=gender]:checked").val();
+      var result = akan(y, m, d, g);
       alert("Your akan name is: " + result);
       //refresh page
       document.getElementById("form").reset();
